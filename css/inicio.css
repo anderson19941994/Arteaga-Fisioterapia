@@ -1,0 +1,38 @@
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.4)), 
+                url('https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.hero-tag { background: var(--dorado); padding: 5px 15px; border-radius: 5px; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; display: inline-block; }
+.hero h1 { font-size: 4.5rem; line-height: 1.1; margin-bottom: 25px; font-weight: 700; text-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.hero p { font-size: 1.3rem; max-width: 650px; margin-bottom: 40px; opacity: 0.9; }
+
+.btn-primary { background: var(--verde-primario); color: white; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-right: 20px; transition: var(--transicion); display: inline-block; }
+.btn-primary:hover { background: var(--verde-oscuro); transform: translateY(-3px); }
+.btn-secondary { border: 2px solid white; color: white; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: var(--transicion); display: inline-block; }
+.btn-secondary:hover { background: white; color: var(--oscuro); }
+
+/* STATS */
+.stats { background: var(--verde-claro); padding: 60px 0; margin-top: -50px; position: relative; z-index: 10; border-radius: 20px 20px 0 0; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; }
+.stat-item .number { display: block; font-size: 3rem; font-weight: 700; color: var(--verde-primario); }
+.stat-item .label { font-size: 1rem; color: var(--gris-texto); font-weight: 600; text-transform: uppercase; }
+
+/* WELCOME */
+.welcome { padding: 100px 0; }
+.welcome-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.welcome-img-container { position: relative; }
+.welcome-img-container img { width: 100%; border-radius: 30px; box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
+.experience-badge { position: absolute; bottom: -20px; right: -20px; background: var(--dorado); color: white; padding: 25px; border-radius: 50%; font-weight: 700; text-align: center; box-shadow: 0 10px 25px rgba(197, 160, 89, 0.4); }
+
+.welcome-text h2 { font-size: 3rem; margin-bottom: 25px; color: var(--verde-primario); }
+.highlight { color: var(--dorado); font-weight: 600; font-size: 1.2rem; margin-bottom: 20px; }
+.check-list { list-style: none; margin-top: 30px; }
+.check-list li { margin-bottom: 15px; font-weight: 600; display: flex; align-items: center; gap: 15px; }
+.check-list i { color: var(--verde-primario); font-size: 1.4rem; }
